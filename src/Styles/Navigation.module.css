@@ -1,0 +1,34 @@
+li {
+  list-style: none;
+}
+
+.logo {
+  height: 35px;
+  padding-right: 5px;
+}
+
+.dFlx {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.logo_title_container {
+  display: flex;
+  align-items: center;
+}
+
+.NavBar_ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: unset;
+  gap: 20px;
+  font-size: 11px;
+  color: #1193ec;
+}
+
+.fontW400 {
+  font-weight: 400;
+}
