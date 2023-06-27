@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import saturn from '../images/saturn.png';
 import styles from '../Styles/Navigation.module.css';
 
@@ -9,9 +10,13 @@ const NavBar = () => (
       <h3 className={styles.fontW400}>Space Travelers&apos; Hub</h3>
     </div>
     <ul className={styles.NavBar_ul}>
-      <li>Rockets</li>
-      <li>Missions</li>
-      <li>My Profiles</li>
+      <li>
+        <NavLink className={({ isActive }) => (isActive ? styles.active : ' ')} to="/"> Rockets</NavLink>
+      </li>
+      <li> Missions </li>
+      <li>
+        <NavLink className={({ isActive }) => (isActive ? styles.active : ' ')} to="/profile"> My Profile </NavLink>
+      </li>
     </ul>
   </nav>
 );
